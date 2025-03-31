@@ -76,8 +76,14 @@ next_exer :: proc(infos: []os.File_Info, curr: int){
 
 
 
+    num := curr+1
+    if(num < 1 || num >= len(infos)){
+        log.errorf("%d is out of range", num)
+        return
+    }
+
     buf := make([]u8, size_of(int))
-    err := os.write_entire_file_or_err(filename, transmute([]u8)strconv.itoa(buf, curr+1))
+    err := os.write_entire_file_or_err(filename, transmute([]u8)strconv.itoa(buf, num))
     if(err != nil){
         log.fatalf("failed to increment tracked exercise - %s", reflect.enum_string(err))
     }
@@ -85,11 +91,15 @@ next_exer :: proc(infos: []os.File_Info, curr: int){
     return
 }
 prev_exer :: proc(infos: []os.File_Info, curr: int){
-
-
+    
+    num := curr-1
+    if(num < 0 || num > len(infos)){
+        log.errorf("%d is out of range", num)
+        return
+    }
 
     buf := make([]u8, size_of(int))
-    err := os.write_entire_file_or_err(filename, transmute([]u8)strconv.itoa(buf, curr-1))
+    err := os.write_entire_file_or_err(filename, transmute([]u8)strconv.itoa(buf, num))
     if(err != nil){
         log.fatalf("failed to increment tracked exercise - %s", reflect.enum_string(err))
     }

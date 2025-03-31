@@ -90,6 +90,7 @@ next_exer :: proc(infos: []os.File_Info, curr: int){
 
     return
 }
+
 prev_exer :: proc(infos: []os.File_Info, curr: int){
     
     num := curr-1
@@ -106,6 +107,7 @@ prev_exer :: proc(infos: []os.File_Info, curr: int){
 
     return
 }
+
 goto_exer :: proc(infos: []os.File_Info){
 
     if(len(os.args) < 3){

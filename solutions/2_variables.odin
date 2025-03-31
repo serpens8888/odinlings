@@ -14,7 +14,7 @@ main :: proc(){
     
     fifteen :: 15
 
-    number = fifteen
+    number := fifteen
 
     fmt.println(number)
 

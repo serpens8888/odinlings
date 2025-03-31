@@ -44,6 +44,8 @@ main :: proc(){
     //add another one down here to try it out!
     //you can use "" for lines, '' for single characters, and `` for multi line phrases
 
+    fmt.println("hellope!")
+
 
 
 

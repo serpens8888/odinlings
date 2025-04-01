@@ -1,2 +1,4 @@
 *.o
 *.exe
+odin-out
+current_exercise.txt

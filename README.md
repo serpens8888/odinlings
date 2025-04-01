@@ -12,9 +12,17 @@ git clone https://github.com/serpens8888/odinlings.git
 cd odinlings
 odin build .
 ```
+windows:
+```./init.bat```
 
+linux/mac:
+```
+chmod +x init.sh
+./init.sh
+```
 
 # using odinlings
+these commands will only work in the odinlings root folder
 
 use ```./odinlings curr``` to see the current exercise
 

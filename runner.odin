@@ -50,6 +50,14 @@ main :: proc(){
         case "prev": prev_exer(infos, current_exercise)
         case "goto": goto_exer(infos)
     }
+    
+    //print out order of filenames for debugging
+    /*
+    for &info in infos{
+        fmt.println(info.name)
+    }
+    */
+
 
     return
 }

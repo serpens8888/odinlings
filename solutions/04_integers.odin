@@ -2,15 +2,6 @@ package odinlings
 
 import "core:fmt"
 
-/*
- * odin supports 8, 16, 32, 64, and 128 bit integers
- * integers with higher bit widths can support a larger range of numbers
- *
- * for example, a u8 (unsigned 8 bit integer) can represent 0 to 255 while a u16 can represent 0 to 65,535
- *
- * in odin it is generally best to just use int and uint unless there is a specific reason to use a specific sized integer
-*/
-
 
 main :: proc(){
 
@@ -18,6 +9,7 @@ main :: proc(){
 
     small_num: u8 = 12
 
+    //give this int some more bits
     big_num2: u128 = 53425324532453253245324532453242342342
 
 

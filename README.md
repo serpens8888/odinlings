@@ -38,6 +38,6 @@ use ```./odinlings goto <number>``` to go to a specific exercise
 ```./odinlings curr``` will give you the path of the current exercise file,
 open it in your favorite text editor and try to fix the errors.
 
-if you get stuck there are solved versions in the solutions folder
+if you get stuck there are solved versions in the solutions folder   
 the provided solutions are not the only way to solve the problems
 

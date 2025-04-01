@@ -3,14 +3,14 @@
 
 /*
    comments are there to add extra details and annotations to code
-   // is for single line comments, /* */ is for multiple lines
+   '//' is for single line comments, '/*' '*/' is for multiple lines
 */
 
 
 
 
 //a package is a folder of .odin files
-//each file in the package required the same tag at the top
+//each file in the package requires the same tag at the top
 package odinlings
 
 
@@ -26,7 +26,7 @@ import "core:fmt"
 
 
 //this is the main procedure, or the entrypoint, it is where your code begins
-//generally packages will have one or zero entrypoints, odinlings is an exception to this
+//generally packages will have one or zero entrypoints
 main :: proc(){
 
 

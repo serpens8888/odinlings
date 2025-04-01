@@ -17,12 +17,9 @@ main :: proc(){
     positive_number: uint = 10
     
 
-    //Help! I want to print out -100, but the compiler is giving me trouble...
+    //Help! I want to print out -100, but the compiler is giving me trouble... can you fix it?
     negative_number: uint  = -100
     
     fmt.println(negative_number)
-
-
-
 
 }

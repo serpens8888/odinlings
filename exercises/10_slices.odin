@@ -16,7 +16,7 @@ main :: proc(){
 
     slice: []int = {1, 2, 3}
 
-    fmt.println(len(slice)) //the length of the slice
+    fmt.println(len(slice)) //the length of the slice, len can be used for all array types
     fmt.println(raw_data(slice)) //a pointer to the first element of the slice
 
     //slices can be indexed like arrays

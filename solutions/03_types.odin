@@ -11,7 +11,7 @@ main :: proc(){
     
     
     //turn this into an int so we can make it negative
-    negative_number: int  = -100
+    negative_number: int  = -100 //go ahead and give 'em an autograph!
     
     fmt.println(negative_number)
 

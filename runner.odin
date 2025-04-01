@@ -5,7 +5,6 @@ import "core:fmt"
 import "core:log"
 import "core:strconv"
 import "core:reflect"
-import intrin "base:intrinsics"
 import "core:strings"
 import "core:c/libc"
 
@@ -61,7 +60,7 @@ run_exer :: proc(infos: []os.File_Info, curr: int){
 
     cmd: strings.Builder
     defer strings.builder_destroy(&cmd)
-    cmd_str := fmt.sbprintf(&cmd, "odin run %s -file -out:odin-out/%s.exe", to_run.fullpath, to_run.name)
+    cmd_str := fmt.sbprintf(&cmd, "odin run %s -file -sanitize:address -out:odin-out/%s.exe", to_run.fullpath, to_run.name)
     
     libc.system(strings.to_cstring(&cmd))
 

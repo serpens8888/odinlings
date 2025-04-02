@@ -10,8 +10,10 @@ main :: proc(){
     twenty := 30-10
     fmt.println(twenty)
 
-    five := 15/3
-    fmt.println(5)
+    num := ten+twenty
+
+    num = num + 20
+    num += 20
 
     //make this a float so our types work out nicely
     r: f64 = 15

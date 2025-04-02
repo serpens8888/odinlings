@@ -63,7 +63,7 @@ main :: proc(){
     //I've tried to find the area of this square by squaring the side length
     //but it looks like I made a mistake, can you step in to fix it?
 
-    side_len := a.y + b[y]
+    side_len := a.y + d[y]
     area := side_len * side_len
 
     fmt.println("the area is:", area, "!!!!!!!!!")

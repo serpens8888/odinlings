@@ -24,7 +24,7 @@ main :: proc(){
     d.y = 0
 
 
-    side_len := a.y + b.y
+    side_len := a.y + b.y // '.' operator to access
     area := side_len * side_len
 
     fmt.println("the area is:", area, "!!!!!!!!!")

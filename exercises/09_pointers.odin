@@ -5,15 +5,17 @@ import "core:fmt"
 /*
  * Pointers
  * 
- * a pointer is a piece of memory that holds the address of another piece of memory
- * pointer types can be declared by putting a '^' before a type
- * Example: foo: ^uint
+ * a pointer is a variable that holds the memory address of another variable
+ * a memory address is just a number that maps to a location in your computers RAM
+ * pointer types can be declared by putting a '^' on the lefthand side of a type
+ * Example: foo: ^int = address_of(some_int)
  *
  * in odin you can use the '&' operator to get the memory address of something
  * this is called a 'reference'
- * given a pointer, we can 'dereference' it by putting a ^ on the other side
- * this retrieves what the memory points to
- * Example: data := foo^
+ * given a pointer, we can 'dereference' it by putting a '^' on the righthand side of the variable
+ * this retrieves whatever is at the memory address the pointer is holding
+ * Example: ptr: uint^
+ *          data := ptr^
  * 
  * in this case foo == nil because it is not pointing to anything
  * that means this is a nil pointer dereference, causing a segmentation fault

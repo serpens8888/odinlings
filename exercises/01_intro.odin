@@ -15,9 +15,13 @@ package odinlings
 
 
 
-
-//import is used to bring in packages
-//this brings in fmt (format) from the core library
+/*
+ * import is used to bring in packages
+ * this brings in fmt (format) from the core library
+ *
+ * if you want to see the insides of the fmt package they are in Odin/core/fmt -
+ * where 'Odin' is the folder containing the odin compiler
+*/
 import "core:fmt"
 
 

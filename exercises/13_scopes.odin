@@ -23,11 +23,17 @@ main :: proc(){
      * do not exist in higher scopes
     */
 
-    y := x*10
+    y := 10
 
-    fmt.println(xy)
+    //this is a new scope
+    {
+        z := 14*y
+    }
+
+    w := x*10*z
+
+    fmt.println(w)
 
 }
 
 
-xy := x*y //this is also in the file scope

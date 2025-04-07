@@ -1,3 +1,5 @@
+#+vet
+
 package odinlings
 
 import "core:fmt"
@@ -11,6 +13,11 @@ import "core:fmt"
  * the if statement uses a bool and if that boolean is true
  * the code inside the if statements curly braces '{' ... '}'
  * will be executed by the computer
+ *
+ *
+ * else
+ * else is used after an if block to do something if the condition
+ * is not true
 */
 
 
@@ -23,6 +30,8 @@ main :: proc(){
 
     if !true {
         fmt.println("this never prints!")
+    } else{
+        fmt.println("but this always prints")
     }
 
     if 10>1 {
@@ -35,9 +44,11 @@ main :: proc(){
 
     if(1 != 1){
         fmt.println("1 does not equal one? thats not true...") 
+    } else {
+        fmt.println("I knew it, 1 == 1")
     }
 
-    //don't change the code above this line
+    //don't change above this line
 
     
     x: bool = 2 != 3

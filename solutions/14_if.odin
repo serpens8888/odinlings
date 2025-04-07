@@ -1,3 +1,5 @@
+#+vet
+
 package odinlings
 
 import "core:fmt"
@@ -11,6 +13,8 @@ main :: proc(){
 
     if !true {
         fmt.println("this never prints!")
+    } else{
+        fmt.println("but this always prints")
     }
 
     if 10>1 {
@@ -23,18 +27,17 @@ main :: proc(){
 
     if(1 != 1){
         fmt.println("1 does not equal one? thats not true...") 
+    } else {
+        fmt.println("I knew it, 1 == 1")
     }
 
-    //don't change the code above this line
 
     
     x: bool = 2 != 3
     if x {
-        //you could change this
         x = 2 == 3
     }
 
-    //here I changed false to not false, you could just delete the if
     if !x {
         fmt.println("pls help me print ;-;")
     }

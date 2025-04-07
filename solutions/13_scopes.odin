@@ -7,11 +7,15 @@ x := 123
 
 main :: proc(){
 
-    y := x*10
+    y := 10
 
-    xy := x*y
+    {
+        z := 14*y
 
-    fmt.println(xy)
+        w := x*10*z
+        fmt.println(w)
+    }
+
 
 }
 

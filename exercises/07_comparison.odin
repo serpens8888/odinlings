@@ -17,6 +17,7 @@ package odinlings
  * comparisons will return a boolean type, which can either be true or false
  * odin comes with bool, b8, b16, b32, and b64
  * specified length bools are for interop with C, which didnt have a bool type for a while
+ * bools are 0 when false, and true with any other value
 */
 
 main :: proc(){

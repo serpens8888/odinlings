@@ -30,6 +30,8 @@ main :: proc(){
      * if both sides are blank it slices the entire thing
      * 
      * if you slice something and change the slice, the underlying data changes as well
+     * because slices are pointing back to the original data, and when you change
+     * the data that a pointer points to it it changes in its original location
     */
 
     //                  0     1      2     3      4     5     6      7

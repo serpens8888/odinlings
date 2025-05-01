@@ -14,16 +14,16 @@ import "core:fmt"
  *  modulo and remainder are only distinct for negative inputs
 */
 
-main :: proc(){
-    
+main :: proc() {
 
-    ten := 5+5
+
+    ten := 5 + 5
     fmt.println(ten)
 
-    twenty := (30-20) * 2
+    twenty := (30 - 20) * 2
     fmt.println(twenty)
 
-    num := ten+twenty
+    num := ten + twenty
 
     /* 
      * this sets num to num + 20
@@ -38,15 +38,16 @@ main :: proc(){
 
     fmt.println(num)
 
-    //lets use these operators to find the area of a circle
-    // area = pi * radius^2
+    //lets use these operators to find the area of a circle: area = pi * radius^2
 
     r: int = 15
 
-    pi: f64: 3.14159265358979
+    pi: f64 : 3.14159265358979
 
+    //remember type casting?
     a := pi * (r * r)
 
     fmt.println(a)
 
 }
+

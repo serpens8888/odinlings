@@ -15,13 +15,19 @@ main :: proc(){
     index: int = 0
     element_one := arr[index]
     fmt.println(element_one)
-    arr[1] = 15
-    fmt.println(arr)
+    arr[1] = 15.123
+
+    for num in arr{
+        fmt.println(num)
+    }
 
     /*
-     * why does index zero get us element one? older programming languages used it, and now its common convention
-     * some languages like lua use 1 based indexing, but most languages use 0 based indexing
-     * it can be a little confusing at the start and cause off by one errors from time to time, but you'll get it
+     * why does index zero get us element one?
+     * older programming languages used it, and now its common convention
+     * some languages like lua use 1 based indexing,
+     * but most languages use 0 based indexing
+     * 
+     * it can be confusing at first, but eventually it will make sense
     */
 
 
@@ -32,7 +38,7 @@ main :: proc(){
     result := array*array2
 
     assert(result[0] == 16)
-    assert(result[???] == 21)
+    assert(result[1] == ??)
 
 
 

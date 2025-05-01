@@ -12,7 +12,7 @@ import "core:fmt"
  * a slice is a type, declared with []element_type
 */
 
-main :: proc(){
+main :: proc() {
 
     slice: []int = {1, 2, 3}
 
@@ -31,12 +31,15 @@ main :: proc(){
      * 
      * if you slice something and change the slice, the underlying data changes as well
      * because slices are pointing back to the original data, and when you change
-     * the data that a pointer points to it it changes in its original location
+     * the data that a pointer points to it changes in its original location
     */
 
     //                  0     1      2     3      4     5     6      7
     array: [8]bool = {true, false, true, false, false, true, true, false}
-    sliced_arr := array[5:] //this goes from index 5 to the end, taking the values at indices 5, 6, and 7
+
+
+    //this goes from index 5 to the end, taking the values at indices 5, 6, and 7
+    sliced_arr := array[5:]
     sliced_arr[0] = false
 
 
@@ -48,8 +51,4 @@ main :: proc(){
 
 
 }
-
-
-
-
 

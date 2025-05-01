@@ -12,46 +12,48 @@ import "core:fmt"
  *
  * the if statement uses a bool and if that boolean is true
  * the code inside the if statements curly braces '{' ... '}'
- * will be executed by the computer
+ * will be executed by the computer, the code inside the braces
+ * exists inside the if statements scope
  *
  *
  * else
  * else is used after an if block to do something if the condition
- * is not true
+ * is not true, it is not required
 */
 
 
-main :: proc(){
-    
-    //parantheses are optional here
+main :: proc() {
+
+    //parantheses are optional
     if true {
         fmt.println("this always prints!")
     }
 
     if !true {
         fmt.println("this never prints!")
-    } else{
+    } else {
         fmt.println("but this always prints")
     }
 
-    if 10>1 {
+    if 10 > 1 {
         fmt.println("10 is greater than 1")
     }
 
-    if(1>10){
+    if (1 > 10) {
         fmt.println("1 is greater than 10?")
     }
 
-    if(1 != 1){
-        fmt.println("1 does not equal one? thats not true...") 
+    if 1 != 1 {
+        fmt.println("1 does not equal one? that doesn't feel right...")
     } else {
-        fmt.println("I knew it, 1 == 1")
+        fmt.println("I knew it, 1 == 1!")
     }
 
     //don't change above this line
 
-    
+
     x: bool = 2 != 3
+
     if x {
         x = 2 == 3
     }
@@ -62,9 +64,4 @@ main :: proc(){
 
 
 }
-
-
-
-
-
 

@@ -27,22 +27,24 @@ import "core:fmt"
 
 
 
-
-
 //this is the main procedure, or the entrypoint, it is where your code begins
 //generally packages will have one or zero entrypoints
-main :: proc(){
+main :: proc() {
 
 
     //fmt.println() is used to print a line of text
-    fmt.println(`        __  ___        _____       _____                             _____                     __ ____        ____       `)
-    fmt.println(`      /  //     \     |    //\       |        |        |    |          |       |        |     / //    \      /    \      `)
-    fmt.println(`     /  //       \    |   //  \      |        \\       |    |          |       \\       |    | //            |           `)
-    fmt.println(`    |  //         |   |  //    |     |        | \\     |    |          |       | \\     |    |//     ___      \ _        `)
-    fmt.println(`    | //          |   | //     |     |        |   \\   |    |          |       |   \\   |    //        |          \      `)
-    fmt.println(`     //          /    |//     /      |        |     \\ |    |          |       |     \\ |    |         /          |      `)
-    fmt.println(`      \ _______ /     //_____/     __|__      |       \\    |____    __|__     |       \|     \_______/      \____/      `)
-    fmt.println(`                                                                                                                         `)
+
+    //this fmt disable/enable thing is just so my code formatter doesn't mess this up
+    //odinfmt: disable 
+    fmt.println(`        __  ___        _____       _____                             _____                     __ ____        ____       `,)
+    fmt.println(`      /  //     \     |    //\       |        |        |    |          |       |        |     / //    \      /    \      `,)
+    fmt.println(`     /  //       \    |   //  \      |        \\       |    |          |       \\       |    | //            |           `,)
+    fmt.println(`    |  //         |   |  //    |     |        | \\     |    |          |       | \\     |    |//     ___      \ _        `,)
+    fmt.println(`    | //          |   | //     |     |        |   \\   |    |          |       |   \\   |    //        |          \      `,)
+    fmt.println(`     //          /    |//     /      |        |     \\ |    |          |       |     \\ |    |         /          |      `,)
+    fmt.println(`      \ _______ /     //_____/     __|__      |       \\    |____    __|__     |       \|     \_______/      \____/      `,)
+    fmt.println(`                                                                                                                         `,)
+    //odinfmt: enable
 
 
     //add another one down here to try it out!

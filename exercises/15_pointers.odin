@@ -12,12 +12,14 @@ import "core:fmt"
  *
  * in odin you can use the '&' operator to get the memory address of something
  * this is called a 'reference'
- * given a pointer, we can 'dereference' it by putting a '^' on the righthand side of the variable
+ * given a pointer, we can 'dereference' it by putting a '^'
+ * on the righthand side of the variable
+ *
  * this retrieves whatever is at the memory address the pointer is holding
  * Example: ptr: uint^
  *          data := ptr^
  * 
- * in this case foo == nil because it is not pointing to anything
+ * in this case ptr == nil because it is not pointing to anything
  * that means this is a nil pointer dereference, causing a segmentation fault
  * and crashing out program
  *
@@ -26,23 +28,11 @@ import "core:fmt"
 */
 
 
-main :: proc(){
-    
+main :: proc() {
+
     //help! my code keeps segfaulting...
     ptr: ^uint
     data := ptr^
     fmt.println(data)
 }
-
-
-
-
-
-
-
-
-
-
-
-
 

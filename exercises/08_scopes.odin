@@ -8,13 +8,12 @@ import "core:fmt"
  *
  * a scope is a region of a program
  * this comment is in the 'file scope' since it
- * is at the top of the file and not inside of
- * anything else
+ * is at the top of the file 
 */
 
 x := 123
 
-main :: proc(){
+main :: proc() {
 
     /*
      * this scope is inside the main procedure
@@ -25,15 +24,15 @@ main :: proc(){
 
     y := 10
 
-    //this is a new scope
+    //this is a new scope, this scope is below the scope of the main procedure
     {
-        z := 14*y
+        //z only exists in the new scope and any scopes below it
+        z := 14 * y
     }
 
-    w := x*10*z
+    w := x * 10 * z
 
     fmt.println(w)
 
 }
-
 

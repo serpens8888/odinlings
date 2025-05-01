@@ -8,17 +8,17 @@ package odinlings
 */
 
 
-main :: proc(){
-    
-    float: f32 = 0.123
-    
-    //no precision is lost here, so this works
-    one: int = 1.0
+main :: proc() {
 
-    two: f16 = 10
+    float: f32 = 0.123
+
+    one: int = 1.0 //this works in odin
+
+    ten: f16 = 10
 
 
 
     pi: u64 = 3.14159265358979
-     
+
 }
+

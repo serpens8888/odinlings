@@ -1,0 +1,14 @@
+{
+    "character_width": 80,
+    "spaces": 4,
+    "newline_limit": 4,
+    "tabs": false,
+    "tabs_width": 4,
+    "convert_do": false,
+    "brace_style": "_1TBS",
+    "indent_cases": false,
+    "newline_style": "LF",
+    "sort_import": true,
+    "inline_single_stmt_case": true,
+    "spaces_around_colons": false,
+}
